@@ -9,7 +9,9 @@ const questions = [
     "Enter a description",
     "Enter installation instructions",
     "Enter usage information",
+    "Enter credits",
     "Choose a license for your application",
+    "Enter features of your project",
     "Enter contribution guidelines",
     "Enter test instructions",
     "Enter your GitHub username",
@@ -18,9 +20,9 @@ const questions = [
 
 // The writeToFile function creates README file.
 function writeToFile (data) {
-    fs.writeFile('README.md', data, (err) =>
-        err ? console.error(err) : console.log('Success!'))
-}
+    fs.writeFile('sampleREADME.md', data, (err) =>
+        err ? console.error(err) : console.log('README file has been successfully created.'))
+};
 
 // The init function prompts user to enter information to be written on the README file.
 function init () {
@@ -47,9 +49,14 @@ function init () {
                 message: questions[3]
             },
             {
+                name: "credits",
+                type: "input",
+                message: questions[4]
+            },
+            {
                 name: "license",
                 type: "list",
-                message: questions[4],
+                message: questions[5],
                 choices: [
                     "None",
                     "Apache license 2.0",
@@ -68,31 +75,36 @@ function init () {
                 ]
             },
             {
-                name: "contributing",
-                type: "input",
-                message: questions[5]
-            },
-            {
-                name: "tests",
+                name: "features",
                 type: "input",
                 message: questions[6]
             },
             {
-                name: "username",
+                name: "contributing",
                 type: "input",
                 message: questions[7]
             },
             {
-                name: "email",
+                name: "tests",
                 type: "input",
                 message: questions[8]
+            },
+            {
+                name: "username",
+                type: "input",
+                message: questions[9]
+            },
+            {
+                name: "email",
+                type: "input",
+                message: questions[10]
             },
         ])
         .then((response) => {
             const data = generateMarkdown(response);
             writeToFile(data);
         })
-}
+};
 
 // Initialize the app in node.js.
 init();
