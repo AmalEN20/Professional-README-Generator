@@ -26,3 +26,6 @@ This is a simple command-line application to quickly generate professional READM
 
 ## License
 Copyright © 2022 [Claire Cho](https://github.com/clairehwcho).
+
+https://user-images.githubusercontent.com/106784125/212521566-aa9198b8-4a25-4646-8bc1-9a1554666516.mp4
+
