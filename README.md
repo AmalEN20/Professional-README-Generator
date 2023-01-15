@@ -21,12 +21,8 @@ This is a simple command-line application to quickly generate professional READM
 
 ## Usage
 
-![index page](./assets/images/screenshot_index.jpeg)
-- Index page
-
-![index page](./assets/images/screenshot_result.jpeg)
-- Result page after search
-
+- Walkthrough video
+![walkthrough video](./assets/videos/readme-generator-walkthrough.mp4)
 
 ## License
 Copyright © 2022 [Claire Cho](https://github.com/clairehwcho).

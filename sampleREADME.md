@@ -5,7 +5,7 @@
 
 <!-- omit in toc -->
 ## Description
-  This is a sample Readme Generator App usign Node.js inquirer package.
+  This is a sample Readme generator app using Node.js inquirer package.
 
 <!-- omit in toc -->
 ## Table of Contents
